@@ -1,10 +1,10 @@
 
-public class emp implements Comparable<>{
-		 String name;
-		 String desig;
-		String city;
-	 String project;
-	 int id;
+public class emp {
+		private String name;
+		private String desig;
+		private String city;
+		private String project;
+	private int id;
 
 		public emp(String name, String desig, String city, String project,int id) {
 			this.name = name;
@@ -13,7 +13,14 @@ public class emp implements Comparable<>{
 			this.project = project;
 			this.id=id;
 		}
-		public int getId() {
+
+		public String toString() {
+			return "emp [name=" + name + ", desig=" + desig + ", city=" + city + ", project=" + project + ", id=" + id
+					+ "]";
+		}
+	
+}
+		/*public int getId() {
 			return id;
 		}
 		public void setId(int id) {
@@ -53,4 +60,4 @@ public class emp implements Comparable<>{
 	    	return -1;  
 	    	}  
 	    	  
-}
+}*/
